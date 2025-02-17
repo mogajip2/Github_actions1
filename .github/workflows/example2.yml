@@ -1,0 +1,12 @@
+name :  Super-Linter 
+on : push   
+jobs:
+   super-lint:
+      name: lint code base
+      runs-in: Ubuntu-latest
+      steps:
+         -name: checkout code
+         uses: actions/checkout@v2
+         -name: Run super-Linter
+         uses: github/super-linter@v4
+   
