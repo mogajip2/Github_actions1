@@ -1,12 +1,15 @@
-name:  Super-Linter 
-on: push   
+name: Super-Linter
+on: 
+  push   
+
 jobs:
-   super-lint:
-      name: lint code base
-      runs-in: Ubuntu-latest
-      steps:
-         -name: checkout code
-         uses: actions/checkout@v2
-         -name: Run Super-Linter
-         uses: github/super-linter@v4
-   
+  super-lint:
+    name: Lint Code Base
+    runs-on: ubuntu-latest  # ✅ Fixed `runs-on`
+    steps:
+      - name: Checkout Code  # ✅ Fixed spacing issue
+        uses: actions/checkout@v2  # ✅ Fixed indentation
+
+      - name: Run Super-Linter  # ✅ Fixed spacing issue
+        uses: github/super-linter@v4  # ✅ Corrected indentation
+
