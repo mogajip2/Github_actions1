@@ -1,5 +1,5 @@
-name :  Super-Linter 
-on : push   
+name:  Super-Linter 
+on: push   
 jobs:
    super-lint:
       name: lint code base
