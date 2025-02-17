@@ -7,6 +7,6 @@ jobs:
       steps:
          -name: checkout code
          uses: actions/checkout@v2
-         -name: Run super-Linter
+         -name: Run Super-Linter
          uses: github/super-linter@v4
    
